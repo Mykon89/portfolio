@@ -48,6 +48,8 @@ p.descriptionHome {
   font-size: 24px;
   font-weight: bold;
   color: white;
+  border: none;
+  text-decoration: none;
 }
 
 .links button {

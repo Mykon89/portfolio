@@ -51,7 +51,7 @@ export default function Main() {
             <button>
               <span>Conhecer Sobre</span>
             </button>
-            <a href="">
+            <a href="https://github.com/Mykon89">
               <span>GitHub</span>
             </a>
           </div>
