@@ -1,0 +1,31 @@
+.container-menu ul {
+  width: 100%;
+  position: fixed;
+  padding: 24px 72px;
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  background-color: rgba(21, 23, 24, 0.35);
+  backdrop-filter: blur(8px);
+}
+
+.home,
+.option {
+  list-style: none;
+  cursor: pointer;
+}
+
+.home h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+
+  padding-left: 128px;
+}
+
+.option {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.747);
+  background-color: transparent;
+}
