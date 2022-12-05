@@ -38,6 +38,21 @@ export default function Main() {
     },
   ];
 
+  const projects = [
+    {
+      image: `${ReactJS}`,
+      title: 'ReactJS',
+      description: 'Eis o React.JS',
+      link: 'aqui tem um link para acessar',
+    },
+    {
+      image: `${ReactJS}`,
+      title: 'ReactJS',
+      description: 'Eis o React.JS',
+      link: 'aqui tem um link para acessar',
+    },
+  ];
+
   return (
     <main>
       <div>
@@ -125,7 +140,7 @@ export default function Main() {
         </section>
         <div className="lineSeperator"></div>
         <section className="container">
-          <div className="projetos">
+          <div className="projectsTitle">
             <h3>Projetos</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -138,11 +153,20 @@ export default function Main() {
             </p>
           </div>
           <div className="cards">
-            <div className="card">projeto1</div>
-            <div className="card">projeto2</div>
-            <div className="card">projeto3</div>
-            <div className="card">projeto4</div>
-            <div className="card">projeto5</div>
+            {projects.map(project => (
+              <div
+                className="card"
+                key={project}
+                style={{
+                  backgroundImage: `url(${project.image})`,
+                }}
+              >
+                <a href="#" className="projectDescription">
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                </a>
+              </div>
+            ))}
           </div>
         </section>
         <div className="lineSeperator"></div>

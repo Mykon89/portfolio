@@ -41,7 +41,9 @@ p.descriptionHome {
 
 .links button,
 .links a,
-.email {
+.email,
+.projectDescription {
+  cursor: pointer;
   padding: 16px 32px;
   border-radius: 48px;
   gap: 8px;
@@ -77,9 +79,7 @@ p.descriptionHome {
   gap: 96px;
 }
 
-.about h3,
-.skillTitle h3,
-.skills h3 {
+h3 {
   font-size: 32px;
   font-weight: bold;
 }
@@ -119,17 +119,20 @@ p.descriptionHome {
   color: white;
 }
 
-.skillTitle {
+.skillTitle,
+.projectsTitle {
   width: 90%;
   display: block;
   align-items: center;
 }
 
-.skillTitle h3 {
+.skillTitle h3,
+.projectsTitle h3 {
   text-align: center;
 }
 
-.skillTitle p {
+.skillTitle p,
+.projectsTitle p {
   max-width: 100%;
   margin-top: 48px;
   font-size: 32px;
@@ -137,7 +140,8 @@ p.descriptionHome {
   color: rgba(255, 255, 255, 0.747);
 }
 
-.skills {
+.skills,
+.cards {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -146,9 +150,10 @@ p.descriptionHome {
   gap: 48px;
 }
 
-.containerSkill {
+.containerSkill,
+.card {
   width: 320px;
-  height: 160px;
+  height: 320px;
   padding: 32px;
   border: 1px solid rgba(255, 255, 255, 0.747);
   border-radius: 8px;
@@ -163,14 +168,43 @@ p.descriptionHome {
   display: flex;
 }
 
-.containerSkill h3 {
+.containerSkill h3,
+.projectDescription h3 {
   text-align: center;
 }
 
-.containerSkill p {
+.containerSkill p,
+.projectDescription p {
   text-align: center;
   padding-top: 16px;
   font-size: 16px;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.747);
+}
+
+.cards {
+  overflow: hidden;
+  padding-top: 48px;
+}
+
+.card {
+  background-size: contain;
+  align-items: flex-end;
+  display: flex;
+  padding: 0px;
+}
+
+.card a {
+  width: inherit;
+  height: 200px;
+  border-radius: 16px 16px 8px;
+  background-color: rgba(21, 23, 24, 0.35);
+  transform: translatey(132px);
+  transition-duration: 0.35s;
+}
+
+.card:hover a {
+  transform: translateY(0px);
+  transition-duration: 0.35s;
+  backdrop-filter: blur(8px);
 }
