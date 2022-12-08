@@ -8,6 +8,8 @@ import HTML from '../assets/html.svg';
 import CSS from '../assets/css.svg';
 import JavaScript from '../assets/javascript.svg';
 import Bootstrap from '../assets/bootstrap.svg';
+import Whatsapp from '../assets/whatsapp.svg';
+import Email from '../assets/email.svg';
 
 export default function Main() {
   const skills = [
@@ -50,6 +52,19 @@ export default function Main() {
       title: 'ReactJS',
       description: 'Eis o React.JS',
       link: 'aqui tem um link para acessar',
+    },
+  ];
+
+  const contacts = [
+    {
+      image: `${Whatsapp}`,
+      title: 'Whatsapp',
+      description: '(+55) 61 9 91841232',
+    },
+    {
+      image: `${Email}`,
+      title: 'E-mail',
+      description: 'helvis89@gmail.com',
     },
   ];
 
@@ -171,17 +186,22 @@ export default function Main() {
         </section>
         <div className="lineSeperator"></div>
         <section className="container">
-          <div className="contato">
+          <div className="contactTitle">
             <h3>Contato</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+            <p>Gostou do que viu? Entre em contato!</p>
+          </div>
+          <div className="contact">
+            {contacts.map(contact => (
+              <div className="containerContact" key={contact}>
+                <div>
+                  <img src={contact.image} alt="imagem" />
+                </div>
+                <div className="imgDescription">
+                  <h3>{contact.title}</h3>
+                  <p>{contact.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
       </div>
