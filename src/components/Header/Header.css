@@ -10,6 +10,18 @@
   z-index: 1;
 }
 
+.linkSocialFixed {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 24px;
+  top: 340px;
+}
+
+.linkSocialFixed a {
+  margin: 12px;
+}
+
 .home,
 .option {
   list-style: none;
@@ -20,7 +32,6 @@
   font-size: 32px;
   font-weight: bold;
   color: white;
-
   padding-left: 128px;
 }
 

@@ -1,8 +1,6 @@
 import React from 'react';
 import './Main.css';
-import GitHub from '../assets/github.svg';
-import Linkedin from '../assets/linkedin.svg';
-import Instagram from '../assets/instagram.svg';
+
 import ReactJS from '../assets/reactjs.svg';
 import HTML from '../assets/html.svg';
 import CSS from '../assets/css.svg';
@@ -81,9 +79,6 @@ export default function Main() {
             <button>
               <span>Conhecer Sobre</span>
             </button>
-            <a href="https://github.com/Mykon89">
-              <span>GitHub</span>
-            </a>
           </div>
           <div className="email">
             <p>helvis89@gmail.com</p>
@@ -103,17 +98,6 @@ export default function Main() {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum."
               </p>
-              <div className="linkSocial">
-                <a href="https://www.linkedin.com/in/mykon89/">
-                  <img src={Linkedin} alt="Logo Linkedin" />
-                </a>
-                <a href="https://github.com/Mykon89">
-                  <img src={GitHub} alt="Logo GitHub" />
-                </a>
-                <a href="https://www.instagram.com/mykon89/">
-                  <img src={Instagram} alt="Logo Instagram" />
-                </a>
-              </div>
             </div>
             <div className="imgPerfil">
               <img

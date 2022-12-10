@@ -11,6 +11,10 @@ footer {
   line-height: 32px;
 }
 
+.redeSocial a {
+  margin: 12px;
+}
+
 .voltarTopo img {
   width: 64px;
   cursor: pointer;

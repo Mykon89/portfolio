@@ -92,13 +92,6 @@ h3 {
   color: rgba(255, 255, 255, 0.747);
 }
 
-.linkSocial {
-  margin-top: 64px;
-  align-items: center;
-  display: flex;
-  gap: 32px;
-}
-
 .imgPerfil {
   max-width: 480px;
   padding: 112px 48px;
