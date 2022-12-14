@@ -1,10 +1,26 @@
+:root {
+  --bg-page: rgba(0, 0, 0, 0.9);
+  --bg-menu: rgba(21, 23, 24, 0.35);
+  --bg-back-email: rgba(0, 0, 0, 0.3);
+  --color-text: rgba(255, 255, 255, 0.747);
+}
 body {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: var(--bg-page);
 }
 
 .container {
   width: 100%;
-  padding: 100px 48px;
+  padding: 50px 48px;
+  margin: 264px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.container-inicial {
+  width: 100%;
+  padding: 156px 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +43,7 @@ p.descriptionHome {
   font-weight: 400;
   font-size: 32px;
   margin-top: 16px;
-  color: rgba(255, 255, 255, 0.747);
+  color: var(--color-text);
 }
 
 .links,
@@ -60,15 +76,7 @@ p.descriptionHome {
 
 .email {
   width: 540px;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.lineSeperator {
-  margin: 0px auto;
-  width: 112px;
-  height: 4px;
-  border-radius: 16px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--bg-back-email);
 }
 
 .about {
@@ -89,7 +97,7 @@ h3 {
   margin-top: 48px;
   font-size: 32px;
   text-align: justify;
-  color: rgba(255, 255, 255, 0.747);
+  color: var(--color-text);
 }
 
 .imgPerfil {
@@ -120,11 +128,7 @@ h3 {
   align-items: center;
 }
 
-.skillTitle h3,
-.projectsTitle h3,
-.containerSkill h3,
-.projectDescription h3,
-.contactTitle h3 {
+h3 {
   text-align: center;
 }
 
@@ -135,7 +139,7 @@ h3 {
   margin-top: 48px;
   font-size: 32px;
   text-align: justify;
-  color: rgba(255, 255, 255, 0.747);
+  color: var(--color-text);
 }
 
 .skills,
@@ -152,19 +156,19 @@ h3 {
 .containerSkill,
 .card,
 .containerContact {
-  width: 320px;
-  height: 320px;
-  padding: 32px;
-  border: 1px solid rgba(255, 255, 255, 0.747);
+  width: 264px;
+  height: 264px;
+  padding: 16px;
+  border: 1px solid var(--color-text);
   border-radius: 8px;
   display: flex;
   align-items: center;
-  gap: 24px;
+  justify-content: space-around;
 }
 
 .containerSkill img {
-  width: 96px;
-  height: 96px;
+  width: 72px;
+  height: 72px;
   display: flex;
 }
 
@@ -175,7 +179,7 @@ h3 {
   padding-top: 16px;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(255, 255, 255, 0.747);
+  color: var(--color-text);
 }
 
 .cards {

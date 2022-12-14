@@ -64,11 +64,10 @@ export default function Main() {
       description: 'helvis89@gmail.com',
     },
   ];
-
   return (
     <main>
       <div>
-        <section className="container">
+        <section className="container-inicial">
           <h2 className="titleHome">Portfólio Profissional de Hélvis Mykon</h2>
           <p className="descriptionHome">
             Desenvolvedor Front-End, Criação de Sites com Inteligência e Código
@@ -83,7 +82,7 @@ export default function Main() {
             <p>helvis89@gmail.com</p>
           </div>
         </section>
-        <div className="lineSeperator"></div>
+
         <section className="container" title="Sobre" id="sobre">
           <div className="about">
             <div>
@@ -106,7 +105,7 @@ export default function Main() {
             </div>
           </div>
         </section>
-        <div className="lineSeperator"></div>
+
         <section className="container" title="Habilidades" id="habilidades">
           <div className="skillTitle">
             <h3> Habilidades</h3>
@@ -136,7 +135,7 @@ export default function Main() {
             </div>
           </div>
         </section>
-        <div className="lineSeperator"></div>
+
         <section className="container" title="Projetos" id="projetos">
           <div className="projectsTitle">
             <h3>Projetos</h3>
@@ -167,7 +166,7 @@ export default function Main() {
             ))}
           </div>
         </section>
-        <div className="lineSeperator"></div>
+
         <section className="container" title="Contato" id="contato">
           <div className="contactTitle">
             <h3>Contato</h3>

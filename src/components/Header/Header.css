@@ -1,14 +1,18 @@
 .nav {
   position: fixed;
   width: 100%;
-  background-color: rgba(21, 23, 24, 0.35);
+  background-color: var(--bg-menu);
   backdrop-filter: blur(8px);
-  z-index: 1000;
+  z-index: 1;
 }
 
 .nav-logo {
-  width: 45px;
-  height: 45px;
+  max-height: 45px;
+  transform: scale(4, 4);
+}
+
+.nav-logo:hover {
+  cursor: pointer;
 }
 
 .nav .nav-content {
@@ -23,9 +27,16 @@
   margin: 0 32px;
   font-size: 24px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.747);
+  color: var(--color-text);
   list-style: none;
   cursor: pointer;
+}
+
+.nav-item:hover,
+.nav-item .active {
+  color: aqua;
+  text-decoration: 2px underline;
+  transform: scale(1.1, 1.1);
 }
 
 .linkSocialFixed {
@@ -34,8 +45,18 @@
   position: fixed;
   right: 24px;
   top: 340px;
+  background-color: var(--bg-menu);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
 }
 
 .linkSocialFixed a {
   margin: 12px;
+}
+.linkSocialFixed:hover {
+  background-color: var(--bg-back-email);
+}
+
+.linkSocialFixed a:hover {
+  transform: scale(1.2, 1.2);
 }
