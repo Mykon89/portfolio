@@ -1,37 +1,63 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Header.css';
 import GitHub from '../assets/github.svg';
 import Linkedin from '../assets/linkedin.svg';
 import Instagram from '../assets/instagram.svg';
+import Logo from '../assets/logo.png';
+import { animateScroll as scroll, Link } from 'react-scroll';
 
-export default function Header() {
-  const menu = ['Sobre', 'Habilidades', 'Projetos', 'Contato'];
+export default class Header extends Component {
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+  render() {
+    const menu = [
+      { text: 'Sobre', id: 'sobre' },
+      { text: 'Habilidades', id: 'habilidades' },
+      { text: 'Projetos', id: 'projetos' },
+      { text: 'Contato', id: 'contato' },
+    ];
 
-  return (
-    <header>
-      <div className="container-menu">
-        <ul>
-          <li className="home">
-            <h1>Hélvis Mykon</h1>
-          </li>
-          {menu.map((text, index) => (
-            <li className="option" key={index}>
-              <p>{text}</p>
-            </li>
-          ))}
-        </ul>
-        <div className="linkSocialFixed">
-          <a href="https://www.linkedin.com/in/mykon89/">
-            <img src={Linkedin} alt="Logo Linkedin" />
-          </a>
-          <a href="https://github.com/Mykon89">
-            <img src={GitHub} alt="Logo GitHub" />
-          </a>
-          <a href="https://www.instagram.com/mykon89/">
-            <img src={Instagram} alt="Logo Instagram" />
-          </a>
-        </div>
-      </div>
-    </header>
-  );
+    return (
+      <header>
+        <nav className="nav" id="navbar">
+          <div className="nav-content">
+            <img
+              src={Logo}
+              className="nav-logo"
+              alt="logo"
+              onClick={this.scrollToTop}
+            />
+            <ul className="nav-items">
+              {menu.map(menu => (
+                <li className="nav-item" key={menu.id}>
+                  <Link
+                    activeClass="active"
+                    to={menu.id}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={1000}
+                  >
+                    <p>{menu.text}</p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="linkSocialFixed">
+            <a href="https://www.linkedin.com/in/mykon89/">
+              <img src={Linkedin} alt="Logo Linkedin" />
+            </a>
+            <a href="https://github.com/Mykon89">
+              <img src={GitHub} alt="Logo GitHub" />
+            </a>
+            <a href="https://www.instagram.com/mykon89/">
+              <img src={Instagram} alt="Logo Instagram" />
+            </a>
+          </div>
+        </nav>
+      </header>
+    );
+  }
 }

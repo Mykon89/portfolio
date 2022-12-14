@@ -1,13 +1,31 @@
-.container-menu ul {
-  width: 100%;
+.nav {
   position: fixed;
-  padding: 24px 72px;
-  display: flex;
-  align-items: center;
-  gap: 56px;
+  width: 100%;
   background-color: rgba(21, 23, 24, 0.35);
   backdrop-filter: blur(8px);
-  z-index: 1;
+  z-index: 1000;
+}
+
+.nav-logo {
+  width: 45px;
+  height: 45px;
+}
+
+.nav .nav-content {
+  padding: 24px 72px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-item {
+  display: inline-flex;
+  margin: 0 32px;
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.747);
+  list-style: none;
+  cursor: pointer;
 }
 
 .linkSocialFixed {
@@ -20,24 +38,4 @@
 
 .linkSocialFixed a {
   margin: 12px;
-}
-
-.home,
-.option {
-  list-style: none;
-  cursor: pointer;
-}
-
-.home h1 {
-  font-size: 32px;
-  font-weight: bold;
-  color: white;
-  padding-left: 128px;
-}
-
-.option {
-  font-size: 24px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.747);
-  background-color: transparent;
 }

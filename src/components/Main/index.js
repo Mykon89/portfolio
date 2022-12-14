@@ -1,6 +1,5 @@
 import React from 'react';
 import './Main.css';
-
 import ReactJS from '../assets/reactjs.svg';
 import HTML from '../assets/html.svg';
 import CSS from '../assets/css.svg';
@@ -85,7 +84,7 @@ export default function Main() {
           </div>
         </section>
         <div className="lineSeperator"></div>
-        <section className="container">
+        <section className="container" title="Sobre" id="sobre">
           <div className="about">
             <div>
               <h3>Sobre</h3>
@@ -108,7 +107,7 @@ export default function Main() {
           </div>
         </section>
         <div className="lineSeperator"></div>
-        <section className="container">
+        <section className="container" title="Habilidades" id="habilidades">
           <div className="skillTitle">
             <h3> Habilidades</h3>
             <p>
@@ -138,7 +137,7 @@ export default function Main() {
           </div>
         </section>
         <div className="lineSeperator"></div>
-        <section className="container">
+        <section className="container" title="Projetos" id="projetos">
           <div className="projectsTitle">
             <h3>Projetos</h3>
             <p>
@@ -169,7 +168,7 @@ export default function Main() {
           </div>
         </section>
         <div className="lineSeperator"></div>
-        <section className="container">
+        <section className="container" title="Contato" id="contato">
           <div className="contactTitle">
             <h3>Contato</h3>
             <p>Gostou do que viu? Entre em contato!</p>
