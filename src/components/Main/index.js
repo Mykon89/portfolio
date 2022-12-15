@@ -73,14 +73,6 @@ export default function Main() {
             Desenvolvedor Front-End, Criação de Sites com Inteligência e Código
             Estruturado
           </p>
-          <div className="links">
-            <button>
-              <span>Conhecer Sobre</span>
-            </button>
-          </div>
-          <div className="email">
-            <p>helvis89@gmail.com</p>
-          </div>
         </section>
 
         <section className="container" title="Sobre" id="sobre">

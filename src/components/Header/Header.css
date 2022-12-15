@@ -13,6 +13,7 @@
 
 .nav-logo:hover {
   cursor: pointer;
+  transform: scale(4.3);
 }
 
 .nav .nav-content {
@@ -35,7 +36,7 @@
 .nav-item:hover,
 .nav-item .active {
   color: aqua;
-  text-decoration: 2px underline;
+  text-decoration: 2px;
   transform: scale(1.1, 1.1);
 }
 
@@ -47,7 +48,7 @@
   top: 340px;
   background-color: var(--bg-menu);
   backdrop-filter: blur(8px);
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .linkSocialFixed a {

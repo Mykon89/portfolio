@@ -37,7 +37,7 @@ export default class Header extends Component {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={1000}
+                    duration={500}
                   >
                     <p>{menu.text}</p>
                   </Link>

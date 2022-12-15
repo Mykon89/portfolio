@@ -15,7 +15,7 @@ export default class Footer extends Component {
       <footer>
         <div className="copyRigth">
           <p>Portfólio criado por Hélvis Mykon.</p>
-          <p>Todos os direitos reservados ₢.</p>
+          <p>Todos os direitos reservados 2022 ₢.</p>
         </div>
         <div className="redeSocial">
           <a href="https://www.linkedin.com/in/mykon89/">

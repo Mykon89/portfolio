@@ -20,7 +20,7 @@ body {
 
 .container-inicial {
   width: 100%;
-  padding: 156px 48px;
+  padding: 300px 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,18 +46,6 @@ p.descriptionHome {
   color: var(--color-text);
 }
 
-.links,
-.email {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-top: 72px;
-  gap: 32px;
-}
-
-.links button,
-.links a,
-.email,
 .projectDescription {
   cursor: pointer;
   padding: 16px 32px;
@@ -68,15 +56,6 @@ p.descriptionHome {
   color: white;
   border: none;
   text-decoration: none;
-}
-
-.links button {
-  background-color: #097dea;
-}
-
-.email {
-  width: 540px;
-  background-color: var(--bg-back-email);
 }
 
 .about {
