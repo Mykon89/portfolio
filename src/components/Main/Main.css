@@ -3,6 +3,8 @@
   --bg-menu: rgba(21, 23, 24, 0.35);
   --bg-back-email: rgba(0, 0, 0, 0.3);
   --color-text: rgba(255, 255, 255, 0.747);
+
+  --font-size: 32px;
 }
 body {
   background-color: var(--bg-page);
@@ -10,21 +12,31 @@ body {
 
 .container {
   width: 100%;
-  padding: 50px 48px;
-  margin: 264px 0px;
+  height: 100%;
+  padding: 48px;
+  margin: 16% 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
 }
 
-.container-inicial {
-  width: 100%;
-  padding: 300px 48px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
+#home {
+  background-image: url('../assets/bg-home.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#habilidades {
+  background-image: url('../assets/bg-skills.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#contato {
+  background-image: url('../assets/bg-contact.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .titleHome,
@@ -41,7 +53,7 @@ h2.titleHome {
 
 p.descriptionHome {
   font-weight: 400;
-  font-size: 32px;
+  font-size: var(--font-size);
   margin-top: 16px;
   color: var(--color-text);
 }
@@ -59,7 +71,7 @@ p.descriptionHome {
 }
 
 .about {
-  width: 90%;
+  margin: 0px 5%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -67,14 +79,14 @@ p.descriptionHome {
 }
 
 h3 {
-  font-size: 32px;
+  font-size: var(--font-size);
   font-weight: bold;
 }
 
 .about p {
   max-width: 1120px;
   margin-top: 48px;
-  font-size: 32px;
+  font-size: var(--font-size);
   text-align: justify;
   color: var(--color-text);
 }
@@ -116,7 +128,7 @@ h3 {
 .contactTitle p {
   max-width: 100%;
   margin-top: 48px;
-  font-size: 32px;
+  font-size: var(--font-size);
   text-align: justify;
   color: var(--color-text);
 }
@@ -159,6 +171,10 @@ h3 {
   font-size: 16px;
   line-height: 24px;
   color: var(--color-text);
+}
+
+.containerSkill:hover {
+  background-color: var(--bg-back-email);
 }
 
 .cards {

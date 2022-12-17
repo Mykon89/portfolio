@@ -1,8 +1,9 @@
 .nav {
   position: fixed;
   width: 100%;
+  top: 0%;
   background-color: var(--bg-menu);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(4px);
   z-index: 1;
 }
 

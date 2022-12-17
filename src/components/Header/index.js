@@ -46,13 +46,13 @@ export default class Header extends Component {
             </ul>
           </div>
           <div className="linkSocialFixed">
-            <a href="https://www.linkedin.com/in/mykon89/">
+            <a href="https://www.linkedin.com/in/mykon89/" target="_blank">
               <img src={Linkedin} alt="Logo Linkedin" />
             </a>
-            <a href="https://github.com/Mykon89">
+            <a href="https://github.com/Mykon89" target="_blank">
               <img src={GitHub} alt="Logo GitHub" />
             </a>
-            <a href="https://www.instagram.com/mykon89/">
+            <a href="https://www.instagram.com/mykon89/" target="_blank">
               <img src={Instagram} alt="Logo Instagram" />
             </a>
           </div>
