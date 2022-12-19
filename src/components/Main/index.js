@@ -66,7 +66,7 @@ export default function Main() {
   ];
   return (
     <main>
-      <section className="container" id="home">
+      <section className="container bgHome">
         <h2 className="titleHome">Portfólio Profissional de Hélvis Mykon</h2>
         <p className="descriptionHome">
           Desenvolvedor Front-End, Criação de Sites com Inteligência e Código
@@ -98,6 +98,7 @@ export default function Main() {
       </section>
 
       <section className="container" title="Habilidades" id="habilidades">
+        <div className="bgSkills"></div>
         <div className="skillTitle">
           <h3> Habilidades</h3>
           <p>
