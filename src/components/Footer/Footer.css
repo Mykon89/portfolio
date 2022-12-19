@@ -20,7 +20,8 @@ footer {
   cursor: pointer;
 }
 
-.voltarTopo {
+.voltarTopo,
+.containerContact img:hover {
   animation: pulse 0.7s infinite;
   display: table;
   animation-direction: alternate;

@@ -57,11 +57,13 @@ export default function Main() {
       image: `${Whatsapp}`,
       title: 'Whatsapp',
       description: '(+55) 61 9 91841232',
+      link: 'https://contate.me/helvis-mykon',
     },
     {
       image: `${Email}`,
       title: 'E-mail',
       description: 'helvis89@gmail.com',
+      link: 'https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Portfolio+H%C3%A9lvis+Mykon&to=helvis89@gmail.com',
     },
   ];
   return (
@@ -79,13 +81,13 @@ export default function Main() {
           <div>
             <h3>Sobre</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
+              Meu nome é Hélvis Mykon, tenho 33 anos. Um dos meus objetivos é
+              atuar na área de desenvolvimento Web, tenho estudado e práticado
+              muito e para o futuro conseguirei ainda mais conhecimento, este
+              postfólio foi criado por mim no intuito de adquirir mais
+              experiência e demonstrar um pouco do que sou capaz de criar.
+              Utilizo de muitas plataformas de cursos gratuitos e pagos para
+              refinar minhas habilidades. Almejo me desenvolver cada vez mais.
             </p>
           </div>
           <div className="imgPerfil">
@@ -102,13 +104,11 @@ export default function Main() {
         <div className="skillTitle">
           <h3> Habilidades</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
+            Aqui você irá encontrar as tecnologias que eu utilizei para criar
+            este portfólio e os aplicativos que estão demonstrados na aba de
+            <strong> Projetos</strong>. Estarei sempre atualizando essa área
+            assim que for concluindo mais projetos ou até mesmo na melhoria do
+            próprio portfólio.
           </p>
         </div>
         <div className="containerSkills">
@@ -132,13 +132,8 @@ export default function Main() {
         <div className="projectsTitle">
           <h3>Projetos</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
+            Reservei essa área para a demonstração dos projetos desenvolvidos
+            por mim ou até mesmo em conjunto com amigos da área.
           </p>
         </div>
         <div className="cards">
@@ -168,7 +163,9 @@ export default function Main() {
           {contacts.map(contact => (
             <div className="containerContact" key={contact}>
               <div>
-                <img src={contact.image} alt="imagem" />
+                <a href={contact.link} target="_blank">
+                  <img src={contact.image} alt="imagem" />
+                </a>
               </div>
               <div className="imgDescription">
                 <h3>{contact.title}</h3>
