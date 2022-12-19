@@ -15,6 +15,10 @@ footer {
   margin: 12px;
 }
 
+.redeSocial img:hover {
+  transform: scale(1.2);
+}
+
 .voltarTopo img {
   width: 64px;
   cursor: pointer;

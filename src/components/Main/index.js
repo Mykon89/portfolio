@@ -7,6 +7,10 @@ import JavaScript from '../assets/javascript.svg';
 import Bootstrap from '../assets/bootstrap.svg';
 import Whatsapp from '../assets/whatsapp.svg';
 import Email from '../assets/email.svg';
+import Cronometro from '../assets/cronômetro.png';
+import Portfolio from '../assets/portfolio.png';
+import Aluratube from '../assets/aluratube.png';
+import Organo from '../assets/organo.png';
 
 export default function Main() {
   const skills = [
@@ -39,16 +43,28 @@ export default function Main() {
 
   const projects = [
     {
-      image: `${ReactJS}`,
-      title: 'ReactJS',
-      description: 'Eis o React.JS',
-      link: 'aqui tem um link para acessar',
+      image: `${Cronometro}`,
+      title: 'Cronômetro',
+      description: 'Cronômetro desenvolvido na aula do curso Alura',
+      link: 'https://cronometro-helvis-mykon.vercel.app/',
     },
     {
-      image: `${ReactJS}`,
-      title: 'ReactJS',
-      description: 'Eis o React.JS',
-      link: 'aqui tem um link para acessar',
+      image: `${Portfolio}`,
+      title: 'Portfólio',
+      description: 'Portfólio criado para apresentar meus projetos.',
+      link: 'https://portfolio-helvis-mykon.vercel.app/',
+    },
+    {
+      image: `${Aluratube}`,
+      title: 'Aluratube',
+      description: 'Página estilo Youtube',
+      link: 'https://aluratube-mykon89.vercel.app/',
+    },
+    {
+      image: `${Organo}`,
+      title: 'Organo',
+      description: 'Organograma criado em conjunto com as aulas do Alura',
+      link: 'https://organo-orpin.vercel.app/',
     },
   ];
 
@@ -82,8 +98,8 @@ export default function Main() {
             <h3>Sobre</h3>
             <p>
               Meu nome é Hélvis Mykon, tenho 33 anos. Um dos meus objetivos é
-              atuar na área de desenvolvimento Web, tenho estudado e práticado
-              muito e para o futuro conseguirei ainda mais conhecimento, este
+              atuar na área de desenvolvimento, tenho estudado e práticado muito
+              e para o futuro conseguirei ainda mais conhecimento, este
               postfólio foi criado por mim no intuito de adquirir mais
               experiência e demonstrar um pouco do que sou capaz de criar.
               Utilizo de muitas plataformas de cursos gratuitos e pagos para
@@ -145,7 +161,11 @@ export default function Main() {
                 backgroundImage: `url(${project.image})`,
               }}
             >
-              <a href="#" className="projectDescription">
+              <a
+                href={project.link}
+                className="projectDescription"
+                target="_blank"
+              >
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
               </a>
