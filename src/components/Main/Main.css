@@ -162,34 +162,31 @@ h3 {
 }
 
 .cards {
-  overflow: hidden;
   padding-top: 48px;
+  margin-top: 12rem;
 }
 
 .card {
+  overflow: hidden;
   background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   align-items: flex-end;
-  display: flex;
   padding: 0px;
 }
 
 .card a {
-  width: 100%;
+  width: inherit;
   height: 200px;
   border-radius: 16px 16px 8px;
   background-color: rgba(21, 23, 24, 0.35);
   transform: translateY(132px);
-  transition-duration: 0.35s;
-}
-
-.card {
-  background-repeat: no-repeat;
-  background-position: center;
+  transition: all 0.35s;
 }
 
 .card:hover a {
   transform: translateY(0px);
-  transition-duration: 0.35s;
+  transition: all 0.35s;
   backdrop-filter: blur(8px);
 }
 
