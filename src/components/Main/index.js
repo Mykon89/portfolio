@@ -11,6 +11,7 @@ import Cronometro from '../assets/cronômetro.png';
 import Portfolio from '../assets/portfolio.png';
 import Aluratube from '../assets/aluratube.png';
 import Organo from '../assets/organo.png';
+import Login from '../assets/tela-login.png';
 
 export default function Main() {
   const skills = [
@@ -65,6 +66,12 @@ export default function Main() {
       title: 'Organo',
       description: 'Organograma criado em conjunto com as aulas do Alura',
       link: 'https://organo-orpin.vercel.app/',
+    },
+    {
+      image: `${Login}`,
+      title: 'Tela de Login',
+      description: 'Criação para testar minhas habilidades.',
+      link: 'https://tela-login-helvis-mykon.vercel.app/',
     },
   ];
 
@@ -165,6 +172,7 @@ export default function Main() {
                 href={project.link}
                 className="projectDescription"
                 target="_blank"
+                rel="noreferrer"
               >
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
@@ -183,7 +191,7 @@ export default function Main() {
           {contacts.map(contact => (
             <div className="containerContact" key={contact}>
               <div>
-                <a href={contact.link} target="_blank">
+                <a href={contact.link} target="_blank" rel="noreferrer">
                   <img src={contact.image} alt="imagem" />
                 </a>
               </div>
