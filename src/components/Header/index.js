@@ -4,6 +4,7 @@ import GitHub from '../assets/github.svg';
 import Linkedin from '../assets/linkedin.svg';
 import Instagram from '../assets/instagram.svg';
 import Logo from '../assets/logo.svg';
+import MenuMobile from '../assets/menu-mobile.svg';
 import { animateScroll as scroll, Link } from 'react-scroll';
 
 export default class Header extends Component {
@@ -44,6 +45,11 @@ export default class Header extends Component {
                 </li>
               ))}
             </ul>
+            <div className="mobile-menu-icon">
+              <button onClick="menuShow()">
+                <img className="icon" src={MenuMobile} alt="instagram" />
+              </button>
+            </div>
           </div>
           <div className="linkSocialFixed">
             <a
@@ -69,6 +75,24 @@ export default class Header extends Component {
             </a>
           </div>
         </nav>
+        <div className="mobile-menu">
+          <ul className="nav-items">
+            {menu.map(menu => (
+              <li className="nav-item" key={menu.id}>
+                <Link
+                  activeClass="active"
+                  to={menu.id}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  <p>{menu.text}</p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </header>
     );
   }
