@@ -1,0 +1,20 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 418 484" width="418" height="484">
+	<title>Logo</title>
+	<defs>
+		<image  width="418" height="485" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaIAAAHlAQMAAACNmGr4AAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAADBJREFUeJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+BtmTgABV3k83wAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		.s0 { fill: #ffffff } 
+	</style>
+	<use id="Background" style="opacity: 0" href="#img1" x="0" y="0"/>
+	<g id="LOGO">
+		<path id="FORMA 1" class="s0" d="m0 44l40 40v360l-40 40z"/>
+		<path id="FORMA 2" class="s0" d="m208.7 252.7v56.6l-169.7-169.7v-56.6z"/>
+		<path id="FORMA 3" class="s0" d="m263.9 196.9v56.5l-56.6 56.6v-56.6z"/>
+		<path id="FORMA 4" class="s0" d="m377.9 82.9v56.5l-56.6 56.6v-56.6z"/>
+		<path id="FORMA 5" class="s0" d="m93 2l40 40v120l-40-40z"/>
+		<path id="FORMA 6" class="s0" d="m91 205l40 40v200l-40-40z"/>
+		<path id="FORMA 7" class="s0" d="m274 37l40-37v407l-40 37z"/>
+		<path id="FORMA 8" class="s0" d="m377 84l40-40v440l-40-40z"/>
+	</g>
+</svg>
