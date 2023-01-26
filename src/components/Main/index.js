@@ -156,7 +156,7 @@ export default function Main() {
           <h3>Projetos</h3>
           <p>
             Reservei essa área para a demonstração dos projetos desenvolvidos
-            por mim ou até mesmo em conjunto com amigos da área.
+            por mim.
           </p>
         </div>
         <div className="cards">

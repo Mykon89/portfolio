@@ -6,7 +6,7 @@
 
   --font-size: 32px;
 
-  --translateY: translateY(132px);
+  --translateY: translateY(68%);
   --translateYHover: translateY(0px);
   --transition: all 0.35s;
 }
@@ -30,6 +30,7 @@ body {
 .titleHome,
 .descriptionHome {
   text-align: center;
+  align-items: center;
   max-width: 572px;
 }
 
@@ -180,7 +181,7 @@ h3 {
   width: 100%;
   height: 75%;
   border-radius: 8px;
-  background-color: rgba(21, 23, 24, 0.35);
+  background-color: rgba(21, 23, 24, 0.9);
   transform: var(--translateY);
   -o-transform: var(--translateY);
   -moz-transform: var(--translateY);
@@ -193,7 +194,6 @@ h3 {
   -o-transform: var(--translateYHover);
   -moz-transform: var(--translateYHover);
   -webkit-transform: var(--translateYHover);
-  backdrop-filter: blur(8px);
 }
 
 .card a,

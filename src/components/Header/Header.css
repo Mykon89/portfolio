@@ -62,3 +62,9 @@
 .linkSocialFixed a:hover {
   transform: scale(1.2);
 }
+
+@media only screen and (max-device-width: 480) {
+  .nav {
+    width: 100%;
+  }
+}
