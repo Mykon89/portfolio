@@ -1,12 +1,12 @@
-import Header from './components/Header';
 import Main from './components/Main';
-import './components/assets/reset.css';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import './components/assets/reset.css';
 
 function App() {
   return (
     <>
-      <Header />
+      <Navbar />
       <Main />
       <Footer />
     </>

@@ -18,13 +18,25 @@ export default class Footer extends Component {
           <p>Todos os direitos reservados 2022 ₢.</p>
         </div>
         <div className="redeSocial">
-          <a href="https://www.linkedin.com/in/mykon89/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/mykon89/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={Linkedin} alt="Logo Linkedin" />
           </a>
-          <a href="https://github.com/Mykon89" target="_blank">
+          <a
+            href="https://www.github.com/Mykon89"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={GitHub} alt="Logo GitHub" />
           </a>
-          <a href="https://www.instagram.com/mykon89/" target="_blank">
+          <a
+            href="https://www.instagram.com/mykon89/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={Instagram} alt="Logo Instagram" />
           </a>
         </div>
