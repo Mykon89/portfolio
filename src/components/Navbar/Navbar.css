@@ -33,7 +33,7 @@
   grid-gap: 56px;
   list-style: none;
   text-align: center;
-  width: 40vw;
+  width: 70vw;
   justify-content: end;
   margin-right: 2rem;
 }
@@ -120,7 +120,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(25%, 50%);
+    margin: 12px;
   }
 
   .menu-icon {
@@ -128,7 +128,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
+    margin: 12px;
     font-size: 1.8rem;
     cursor: pointer;
   }
