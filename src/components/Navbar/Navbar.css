@@ -1,16 +1,16 @@
 .NavbarItems {
   position: fixed;
   width: 100%;
-  top: 0%;
-  background-color: var(--bg-menu);
-  backdrop-filter: blur(4px);
-  z-index: 1;
   height: 80px;
+  top: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   color: white;
+  background-color: white;
+  backdrop-filter: blur(4px);
+  z-index: 1;
 }
 
 .navbar-logo img {
@@ -78,7 +78,7 @@
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .nav-menu {
     display: flex;
     grid-gap: 5px;
@@ -120,7 +120,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    margin: 12px;
   }
 
   .menu-icon {
@@ -157,4 +156,4 @@
   .linkSocialFixed ul {
     margin: 0;
   }
-} ;
+} ; */
