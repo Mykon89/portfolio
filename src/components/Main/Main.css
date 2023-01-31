@@ -1,7 +1,6 @@
 :root {
   --bg-page: rgba(0, 0, 0, 0.9);
   --bg-menu: rgba(21, 23, 24, 0.35);
-  --bg-menu-responsivo: rgba(21, 23, 24, 0.9);
   --bg-back-email: rgba(0, 0, 0, 0.3);
   --color-text: rgba(255, 255, 255, 0.747);
 
@@ -165,8 +164,7 @@ h3 {
 }
 
 .cards {
-  padding-top: 48px;
-  margin-top: 12rem;
+  padding-top: 56px;
 }
 
 .card {
