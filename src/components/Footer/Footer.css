@@ -74,4 +74,8 @@ footer {
     width: 32px;
     cursor: pointer;
   }
+
+  .copyRigth {
+    font-size: smaller;
+  }
 }
