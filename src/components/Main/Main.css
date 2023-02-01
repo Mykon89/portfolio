@@ -214,4 +214,13 @@ h3 {
     width: 70%;
     align-self: center;
   }
+
+  .containerContact {
+    height: 10%;
+    margin: 0;
+  }
+
+  .contactTitle {
+    margin-bottom: 48px;
+  }
 }

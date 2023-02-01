@@ -1,7 +1,7 @@
 footer {
   background-color: var(--bg-back-email);
   color: white;
-  padding: 32px 128px;
+  padding: 24px 128px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,8 +11,10 @@ footer {
   line-height: 32px;
 }
 
-.redeSocial a {
+.redeSocial ul {
   margin: 12px;
+  list-style: none;
+  display: flex;
 }
 
 .redeSocial img:hover {
@@ -52,5 +54,24 @@ footer {
   100% {
     transform: scale(1.2);
     filter: brightness(200%);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    padding: 12px;
+  }
+
+  .redeSocial img {
+    transform: scale(0.7);
+  }
+
+  .redeSocial img:hover {
+    transform: scale(0.9);
+  }
+
+  .voltarTopo img {
+    width: 32px;
+    cursor: pointer;
   }
 }

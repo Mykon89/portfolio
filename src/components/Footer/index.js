@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import './Footer.css';
-import GitHub from '../assets/github.svg';
-import Linkedin from '../assets/linkedin.svg';
-import Instagram from '../assets/instagram.svg';
 import Voltar from '../assets/voltar.svg';
+import { LinkSocial } from '../Navbar/LinkSocial';
 
 export default class Footer extends Component {
   scrollToTop = () => {
@@ -18,27 +16,17 @@ export default class Footer extends Component {
           <p>Todos os direitos reservados 2022 ₢.</p>
         </div>
         <div className="redeSocial">
-          <a
-            href="https://www.linkedin.com/in/mykon89/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={Linkedin} alt="Logo Linkedin" />
-          </a>
-          <a
-            href="https://www.github.com/Mykon89"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={GitHub} alt="Logo GitHub" />
-          </a>
-          <a
-            href="https://www.instagram.com/mykon89/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={Instagram} alt="Logo Instagram" />
-          </a>
+          <ul>
+            {LinkSocial.map((link, index) => {
+              return (
+                <li key={index}>
+                  <a href={link.url} target={link.target} rel={link.rel}>
+                    <img src={link.image} alt={link.alt} />
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
         </div>
         <div className="voltarTopo">
           <img src={Voltar} alt="voltar" onClick={this.scrollToTop} />
