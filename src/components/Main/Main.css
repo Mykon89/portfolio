@@ -62,9 +62,7 @@ p.descriptionHome {
 .about {
   margin: 0px 5%;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 96px;
+  align-items: center;
 }
 
 h3 {
@@ -81,15 +79,10 @@ h3 {
   color: var(--color-text);
 }
 
-.imgPerfil {
-  max-width: 480px;
-  padding: 112px 48px;
-}
-
 .imgPerfil img {
-  max-width: 100%;
-  width: auto;
+  width: 100%;
   border-radius: 300px;
+  padding: 56px;
 }
 
 .containerSkills {
@@ -209,4 +202,16 @@ h3 {
 
 .contactTitle p {
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imgPerfil {
+    width: 70%;
+    align-self: center;
+  }
 }

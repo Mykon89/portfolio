@@ -101,6 +101,12 @@ export default function Main() {
 
       <section className="container" title="Sobre" id="sobre">
         <div className="about">
+          <div className="imgPerfil">
+            <img
+              src="https://avatars.githubusercontent.com/u/104459249?v=4"
+              alt="imagem perfil portfolio"
+            />
+          </div>
           <div>
             <h3>Sobre</h3>
             <p>
@@ -112,12 +118,6 @@ export default function Main() {
               Utilizo de muitas plataformas de cursos gratuitos e pagos para
               refinar minhas habilidades. Almejo me desenvolver cada vez mais.
             </p>
-          </div>
-          <div className="imgPerfil">
-            <img
-              src="https://avatars.githubusercontent.com/u/104459249?v=4"
-              alt="imagem perfil portfolio"
-            />
           </div>
         </div>
       </section>
